@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3-Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="screen" class="screen">0</div> 
+        <div class="click">
+            <button class="insert" style=" grid-column: span 2;" onclick="screen_empty()">C</button>
+            <button class="insert" style=" grid-column: span 2;"onclick="del()">X</button>
+
+            <button class="insert nbr" onclick="nbr(7)">7</button>
+            <button class="insert nbr" onclick="nbr(8)">8</button>
+            <button class="insert nbr" onclick="nbr(9)">9</button>
+
+            <button class="insert" onclick="Operator('*')">*</button>
+
+           <button class="insert nbr" onclick="nbr(4)">4</button>
+           <button class="insert nbr" onclick="nbr(5)">5</button>
+           <button class="insert nbr" onclick="nbr(6)">6</button>
+
+           <button class="insert" onclick="Operator('/')">/</button>
+
+            <button class="insert nbr" onclick="nbr(1)">1</button>
+            <button class="insert nbr" onclick="nbr(2)">2</button>
+            <button class="insert nbr" onclick="nbr(3)">3</button>
+
+            <button class="insert" onclick="Operator('-')">-</button>
+            <button class="insert nbr" onclick="nbr(0)">0</button>
+            <button class="insert" onclick="nbr('.')">.</button>
+          
+              <button class="insert" onclick="results()">=</button>
+              <button class="insert" onclick="Operator('+')">+</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
